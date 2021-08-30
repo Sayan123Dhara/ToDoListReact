@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+.Main_div{
+    height: 100vh;
+    width: 100%;
+    background: #6983aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.inner_div{
+    height: 80%;
+    width: 45%;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    /*overflow: auto;*/
+}
+
+.inner_div h1{
+    color: #fff;
+    background: transparent;
+    background-color: #8566aa;
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+input {
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid #8566aa;
+    outline: none;
+}
+.inner_div button{
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #8566aa;
+    color: #fff;
+    font-size: 24px;
+    border:  none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.wrong{
+    color: red;
+}
+
+.rightelement{
+    color: green;
+}
+
+.inner_div button:hover{
+    background-color: #20bf6f;
+}
+
+
+.inner_div .showItmes button{
+    min-height: 40px;
+    width: 157px;
+    border-radius: 6%;
+    border-color: transparent;
+    background-color: #8566aa;
+    color: #fff;
+    font-size: 19px;
+    border:  none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+}
+
+
+.another_div{
+    height: 55%;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    overflow: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+ol{
+    margin-top: 10px;
+}
+
+ol li{
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #8566aa;
+    text-transform: capitalize;
+    width: auto;
+    margin-top: 2px;
+}
+ol li:hover{
+    color: #000;
+}
+
+.todo_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+
+.todo_style .fa-trash{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 13px 15px 0 15px;
+    color: crimson;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.todo_style .fa-times{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 13px 15px 0 3px;
+    color: crimson;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.todo_style .fa-check{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 13px 15px 0 -3px;
+    color: green;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.todo_style .fa-pencil-square-o{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 50%;
+    margin: 13px 15px 0 0px;
+    color: #f0ad4e;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    /*font-size: 15PX;*/
+}
+
+.todo_style .fa-trash:hover , .todo_style .fa-times:hover{
+    background-color: crimson;
+    color: aliceblue;
+}
+
+.todo_style .fa-pencil-square-o:hover{
+    background-color: #f0ad4e;
+    color: aliceblue ;
+}
+
+
+.todo_style .fa-check:hover{
+    background-color: green;
+    color: aliceblue;
+}
+
+.todo_style .fa-times:hover .list_style{
+    color: crimson;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .inner_div{
+        width: 78%;
+    }
+
+    button{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: #fff;
+    }
+}
+
+@media (max-width: 1300px){
+
+.inner_div .showItmes button{
+    margin-top: 10px;
+}
+}
+
+@media (max-width: 390px){
+    .inner_div button{
+        width: 30px;
+        font-size: 15px;
+        height: 20px;
+}
+    
+input {
+    font-size: 13px;
+    width: 53%;
+}
+.inner_div h1{
+    font-size: 24px;
+}
+.inner_div .showItmes button{
+    width: 121px;
+    font-size: 13px;
+}
+.inner_div{
+    width: 86%;
+}
+}
+
+@media (max-width: 286px){
+    .inner_div .showItmes button{
+    width: 86px;
+    margin-left: -3px;
+    font-size: 13px;
+}
+.inner_div{
+    width: 86%;
+}
+.inner_div li{
+    font-size: 10px;
+}
+.todo_style .fa-trash , .todo_style .fa-times , .todo_style .fa-check , .todo_style .fa-pencil-square-o{
+    width: 18px;
+    height: 18px;
+    margin: 5px 6px 0 3px;
+    font-size: 12px;
+}
+ol li{
+    margin-top: -6px;
+}
+}
+
+
+
